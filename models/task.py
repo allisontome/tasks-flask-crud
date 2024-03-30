@@ -13,3 +13,8 @@ class Task:
             "description": self.description,
             "completed": self.completed
         }
+
+    def update(self, data):
+        self.title = data['title']
+        self.description = data['description']
+        self.completed = data['completed']
